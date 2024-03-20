@@ -19,7 +19,6 @@ import web.cssom.*
 import web.dom.document
 
 fun main() {
-    println("Hello World!")
     val root = document.createElement("div")
     document.body.appendChild(root)
 
@@ -31,17 +30,4 @@ val App = FC {
     Background()
     Header()
     Content()
-}
-
-external interface TestProps : Props {
-    var i: Int
-}
-
-val MyButton = FC<TestProps> {
-    var count by useState(1)
-
-    button {
-        onClick = { count++ }
-        +"Clicked $count times"
-    }
 }
