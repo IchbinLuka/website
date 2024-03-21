@@ -115,6 +115,11 @@ private val ProgrammingLangItem = FC<ProgrammingLangItemProps> {
             }
         }
 
-        div { +it.text }
+        p {
+            css {
+                margin = 0.px
+            }
+            +it.text
+        }
     }
 }

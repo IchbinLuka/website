@@ -10,6 +10,7 @@ import react.dom.client.createRoot
 import react.dom.html.ReactHTML.div
 import web.cssom.Display
 import web.cssom.Position
+import web.cssom.pct
 import web.dom.document
 
 fun main() {
@@ -24,6 +25,7 @@ val App = FC {
     div {
         css {
             position = Position.relative
+            width = 100.pct
             display = Display.inlineBlock
         }
         Background()

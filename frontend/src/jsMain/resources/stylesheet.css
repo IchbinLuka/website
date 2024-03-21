@@ -28,11 +28,9 @@ a {
 }
 
 .background {
-    /*filter: blur(25px);*/
     z-index: -2;
     position: absolute;
     width: 100%;
-    /*height: 2000px;*/
     height: 100%;
     overflow: hidden;
 }
@@ -40,7 +38,6 @@ a {
 .contentContainer {
     display: flex;
     flex-direction: column;
-    /*width: 100%;*/
     margin: 20px;
     max-width: 1000px;
 }

@@ -11,7 +11,7 @@ val Content = FC {
             display = Display.flex
             flexDirection = FlexDirection.column
             alignItems = AlignItems.center
-            width = 100.vw
+            width = 100.pct
         }
 
         div {
