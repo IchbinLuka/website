@@ -8,6 +8,7 @@ import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.h1
 import react.dom.html.ReactHTML.img
 import web.cssom.ClassName
+import web.cssom.FontSize
 import web.cssom.pct
 import web.cssom.px
 
@@ -56,5 +57,20 @@ val ProjectElement = FC<ProjectElementProps> {
         div {
             +it.description
         }
+    }
+}
+
+external interface SectionTitleProps : Props {
+    var title: String
+}
+
+val SectionTitle = FC<SectionTitleProps> {
+    div {
+        css {
+            fontSize = FontSize.xxxLarge
+            marginBottom = 20.px
+            marginTop = 30.px
+        }
+        +it.title
     }
 }
