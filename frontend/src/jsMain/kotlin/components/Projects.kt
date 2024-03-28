@@ -26,6 +26,17 @@ val Projects = FC {
     }
 
     ProjectElement {
+        title = "raytracer.rs"
+        image = "images/raytracer_screenshot.png"
+        description = """
+                    A simple raytracer written in Rust.
+                    A Rust + WGSL implementation of Ray Tracing in One Weekend by Peter Shirley.
+                    The source code is available on GitHub.
+                """.trimIndent()
+        sourceCodeLink = "https://github.com/IchbinLuka/raytracer.rs"
+    }
+
+    ProjectElement {
         title = "Space Game (WIP)"
         image = "images/space_game_screenshot.png"
         description = """
