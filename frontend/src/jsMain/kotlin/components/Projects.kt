@@ -6,55 +6,126 @@ import com.ichbinluka.WEBSITE_SOURCE_CODE_URL
 import emotion.react.css
 import react.FC
 import react.dom.html.ReactHTML
+import react.dom.html.ReactHTML.a
 import web.cssom.*
 
 val Projects = FC {
+    WorkProjects()
+
+    FreeTimeProjects()
+}
+
+const val SESAM_ARTICLE_LINK =
+    "https://www.telekom.com/en/blog/careers/article/deutsche-telekom-and-bielefeld-university-developing-solutions-for-digital-identities-1053432"
+
+val WorkProjects = FC {
+    SectionTitle {
+        title = "Work & Study Projects"
+    }
+
+    ProjectElement {
+        title = "SHARLY"
+        image = "https://github.com/sharly-project/.github/raw/master/profile/logo.svg"
+        +"""
+            A Smart Home framework utilizing artificial intelligence for anomaly detection and 
+            activity analysis. I am currently working on this project as a student assistant.
+        """.trimIndent()
+
+        interactionItems = listOf(
+            InteractionItem(
+                title = "GitHub Organization",
+                link = "https://github.com/sharly-project",
+                icon = "icons/github-mark-white.svg"
+            )
+        )
+    }
+
+    ProjectElement {
+        title = "SESAM"
+        image =
+            "https://www.telekom.com/resource/image/1053434/landscape_ratio4x3/768/576/88f5400de646ef82eeb8c18bd1ea9f72/221D67CDF6B5657C692948FD635DF740/bi-20231120-hochschulkoop-sesam-artikel.jpg"
+        +"""
+            In 2023, as students, we had the task of developing a software called SESAM for access 
+            management in buildings as part of a cooperation between University of Bielefeld and 
+            Deutsche Telekom. My team was one of the 3 winning teams. 
+        """.trimIndent()
+        a {
+            href = SESAM_ARTICLE_LINK
+            +"Read more"
+        }
+
+        interactionItems = listOf(
+            InteractionItem(
+                title = "Blog Post",
+                link = SESAM_ARTICLE_LINK,
+                icon = "icons/earth.svg"
+            )
+        )
+    }
+}
+
+val FreeTimeProjects = FC {
     SectionTitle {
         title = "Free Time Projects"
     }
 
     ProjectElement {
         title = "Tanks 3D"
-        openLink = TANK_GAME_URL
         image = "images/tank_game_screenshot.png"
-        description = """
-                    A multiplayer browser game where you control a tank and try to destroy other tanks.
-                    It's built with Three.js and Kotlin/JS.
-                    The server is also written in Kotlin and uses Ktor.
-                    The source code is currently not public, however, you can play the game on my GitHub page.
-                """.trimIndent()
+
+        interactionItems = listOf(
+            PlayInteractionItem(TANK_GAME_URL)
+        )
+
+        +"""
+            A multiplayer browser game where you control a tank and try to destroy other tanks.
+            It's built with Three.js and Kotlin/JS.
+            The server is also written in Kotlin and uses Ktor.
+            The source code is currently not public, however, you can play the game on my GitHub page.
+        """.trimIndent()
     }
 
     ProjectElement {
         title = "raytracer.rs"
         image = "images/raytracer_screenshot.png"
-        description = """
-                    A simple raytracer written in Rust.
-                    A Rust + WGSL implementation of Ray Tracing in One Weekend by Peter Shirley.
-                    The source code is available on GitHub.
-                """.trimIndent()
-        sourceCodeLink = "https://github.com/IchbinLuka/raytracer.rs"
+
+        +"""
+            A simple raytracer written in Rust.
+            A Rust + WGSL implementation of Ray Tracing in One Weekend by Peter Shirley.
+            The source code is available on GitHub.
+        """.trimIndent()
+
+        interactionItems = listOf(
+            SourceCodeInteractionItem("https://github.com/IchbinLuka/raytracer.rs")
+        )
     }
 
     ProjectElement {
         title = "Space Game (WIP)"
         image = "images/space_game_screenshot.png"
-        description = """
-                    A small top down space shooter game where you need to defend space stations from enemy ships.
-                    I am making this game using Rust and the Bevy game engine.
-                    This game is not yet in a state where I can share it, but I'm working on it.
-                """.trimIndent()
+        +"""
+            A small top down space shooter game where you need to defend space stations from enemy ships.
+            I am making this game using Rust and the Bevy game engine.
+            This game is not yet in a state where I can share it, but I'm working on it.
+        """.trimIndent()
     }
     ProjectElement {
         title = "This Website"
-        openLink = "/"
-        sourceCodeLink = WEBSITE_SOURCE_CODE_URL
         image = "images/website_screenshot.png"
-        description = """
-                    This website is built with Kotlin/JS and React.
-                    The backend is also written in Kotlin and uses Ktor.
-                    The source code is available on GitHub.
-                """.trimIndent()
+        +"""
+            This website is built with Kotlin/JS and React.
+            The backend is also written in Kotlin and uses Ktor.
+            The source code is available on GitHub.
+        """.trimIndent()
+
+        interactionItems = listOf(
+            SourceCodeInteractionItem(WEBSITE_SOURCE_CODE_URL),
+            InteractionItem(
+                title = "Open",
+                link = "/",
+                icon = "icons/earth.svg"
+            )
+        )
     }
 
 

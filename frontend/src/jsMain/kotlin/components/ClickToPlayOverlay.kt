@@ -4,58 +4,38 @@ import emotion.react.css
 import react.FC
 import react.Props
 import react.dom.html.ReactHTML.a
-import react.dom.html.ReactHTML.button
 import react.dom.html.ReactHTML.div
 import react.dom.html.ReactHTML.img
-import web.cssom.*
+import web.cssom.ClassName
+import web.cssom.px
 
 external interface ClickToPlayOverlayProps : Props {
-    var playLink: String?
-    var githubLink: String?
+    var interactionItems: List<InteractionItem>?
 }
 
 val ClickToPlayOverlay = FC<ClickToPlayOverlayProps> {
-    if (it.playLink == null && it.githubLink == null) {
+    if (it.interactionItems?.isEmpty() != false) {
         return@FC
     }
 
     div {
         className = ClassName("clickToPlayOverlay")
-
-        if (it.playLink != null) {
+        for (item in it.interactionItems ?: emptyList()) {
             a {
+                href = item.link
+
                 className = ClassName("overlayButton")
-                href = it.playLink
 
                 img {
-                    src = "icons/play_arrow.svg"
-                    alt = "Play"
+                    src = item.icon
+                    alt = item.title
                     css {
                         width = 20.px
                         height = 20.px
                     }
                 }
 
-                +"Play"
-            }
-        }
-
-        if (it.githubLink != null) {
-            a {
-                href = it.githubLink
-
-                className = ClassName("overlayButton")
-
-                img {
-                    src = "icons/github-mark-white.svg"
-                    alt = "GitHub Logo"
-                    css {
-                        width = 20.px
-                        height = 20.px
-                    }
-                }
-
-                +"Source Code"
+                +item.title
             }
         }
     }

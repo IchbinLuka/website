@@ -19,13 +19,29 @@ val ContentElement = FC<PropsWithChildren> {
     }
 }
 
-external interface ProjectElementProps : Props {
+data class InteractionItem(
+    val title: String,
+    val link: String,
+    val icon: String,
+)
+
+external interface ProjectElementProps : PropsWithChildren {
     var title: String
-    var description: String
-    var openLink: String?
-    var sourceCodeLink: String?
     var image: String
+    var interactionItems: List<InteractionItem>
 }
+
+fun SourceCodeInteractionItem(link: String) = InteractionItem(
+    title = "Source Code",
+    link = link,
+    icon = "icons/github-mark-white.svg",
+)
+
+fun PlayInteractionItem(link: String) = InteractionItem(
+    title = "Play",
+    link = link,
+    icon = "icons/play_arrow.svg",
+)
 
 
 val ProjectElement = FC<ProjectElementProps> {
@@ -49,13 +65,12 @@ val ProjectElement = FC<ProjectElementProps> {
                 }
             }
             ClickToPlayOverlay {
-                playLink = it.openLink
-                githubLink = it.sourceCodeLink
+                interactionItems = it.interactionItems
             }
 
         }
         div {
-            +it.description
+            +it.children
         }
     }
 }
