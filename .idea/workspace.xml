@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1001c00-f30c-44db-86ec-ce1d1aecadd8" name="Changes" comment="added About Me section, updated background">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d1001c00-f30c-44db-86ec-ce1d1aecadd8" name="Changes" comment="added work &amp; study projects section">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/jsMain/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/jsMain/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/jsMain/kotlin/components/AboutMe.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/jsMain/kotlin/components/AboutMe.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/jsMain/kotlin/components/Content.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/jsMain/kotlin/components/Content.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/jsMain/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/jsMain/resources/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/jsMain/resources/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/jsMain/resources/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/jsMain/kotlin/components/Projects.kt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/jsMain/kotlin/components/Projects.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/webpack.config.d/webpackConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/webpack.config.d/webpackConfig.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +35,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="website" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="website" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -99,33 +100,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.Build website.executor": "Run",
-    "Gradle.website [kotlinUpgradeYarnLock].executor": "Run",
-    "Gradle.website:frontend [clean].executor": "Run",
-    "Gradle.website:frontend [jsBrowserDevelopmentRun].executor": "Run",
-    "Gradle.website:frontend [jsBrowserDistribution].executor": "Run",
-    "Gradle.website:frontend [jsBrowserRun].executor": "Run",
-    "Kotlin.ApplicationKt.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/luka/Documents/website/frontend",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Build website.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.website [kotlinUpgradeYarnLock].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.website:frontend [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.website:frontend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.website:frontend [jsBrowserDevelopmentRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.website:frontend [jsBrowserDistribution].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.website:frontend [jsBrowserRun].executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/luka/Documents/Kotlin/tank_game&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.first.attach.projects.stats&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend" />
@@ -137,7 +142,7 @@
       <command value="gradle kotlinUpgradeYarnLock" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.website:frontend [jsBrowserDistribution]">
+  <component name="RunManager" selected="Gradle.website:frontend [jsBrowserRun]">
     <configuration name="website [kotlinUpgradeYarnLock]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -150,6 +155,28 @@
         <option name="taskNames">
           <list>
             <option value="kotlinUpgradeYarnLock" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="website:frontend [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/frontend" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,34 +253,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="de.lukaborn.ApplicationKt" />
-      <module name="website.backend.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Gradle.website:frontend [build]" />
       <item itemvalue="Gradle.website:frontend [clean]" />
       <item itemvalue="Gradle.website:frontend [jsBrowserDistribution]" />
       <item itemvalue="Gradle.website [kotlinUpgradeYarnLock]" />
       <item itemvalue="Gradle.website:frontend [jsBrowserRun]" />
-      <item itemvalue="Kotlin.ApplicationKt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.website:frontend [jsBrowserRun]" />
         <item itemvalue="Gradle.website:frontend [jsBrowserDistribution]" />
         <item itemvalue="Gradle.website:frontend [clean]" />
+        <item itemvalue="Gradle.website:frontend [build]" />
         <item itemvalue="Gradle.website [kotlinUpgradeYarnLock]" />
-        <item itemvalue="Kotlin.ApplicationKt" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.9-azul-17.0.9-f644763e9732-8c3bb2c8" />
+        <option value="jdk-17.0.9-jbr-17.0.9-4caba194b151-5240e4f5" />
+        <option value="jdk-22-openjdk-22-4caba194b151-6fbd92ee" />
       </set>
     </attachedChunks>
   </component>
@@ -268,6 +289,16 @@
       <workItem from="1710943332877" duration="1000" />
       <workItem from="1710943862568" duration="31932000" />
       <workItem from="1711024212931" duration="8819000" />
+      <workItem from="1711225938741" duration="969000" />
+      <workItem from="1711307898031" duration="137000" />
+      <workItem from="1711659457705" duration="350000" />
+      <workItem from="1711659817683" duration="1054000" />
+      <workItem from="1711800174878" duration="26000" />
+      <workItem from="1712145458638" duration="6466000" />
+      <workItem from="1713547630009" duration="20000" />
+      <workItem from="1713693940430" duration="1573000" />
+      <workItem from="1713730292535" duration="1631000" />
+      <workItem from="1714060641719" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="added website showcasing some of my projects">
       <option name="closed" value="true" />
@@ -301,7 +332,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711030173887</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added raytracer.rs to projects">
+      <option name="closed" value="true" />
+      <created>1711660139735</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711660139735</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added work &amp; study projects section">
+      <option name="closed" value="true" />
+      <created>1712153539632</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712153539632</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +370,9 @@
     <MESSAGE value="added README.md" />
     <MESSAGE value="added backend, README.md, small fixes" />
     <MESSAGE value="added About Me section, updated background" />
-    <option name="LAST_COMMIT_MESSAGE" value="added About Me section, updated background" />
+    <MESSAGE value="added raytracer.rs to projects" />
+    <MESSAGE value="added work &amp; study projects section" />
+    <option name="LAST_COMMIT_MESSAGE" value="added work &amp; study projects section" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

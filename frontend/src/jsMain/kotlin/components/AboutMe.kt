@@ -70,6 +70,10 @@ val AboutMe = FC {
             text = "Dart + Flutter"
             icon = "icons/dart-logo.svg"
         }
+        ProgrammingLangItem {
+            text = "Java + Spring Boot"
+            icon = "icons/java-logo.svg"
+        }
 
         h1 {
             +"Contact"
@@ -120,6 +124,37 @@ private val ProgrammingLangItem = FC<ProgrammingLangItemProps> {
                 margin = 0.px
             }
             +it.text
+        }
+    }
+}
+
+private val ProgrammingSection = FC {
+    div {
+        css {
+            display = Display.grid
+            gridTemplateColumns = repeat(3, "auto".unsafeCast<GridTemplateTracks>())
+        }
+
+        val items = listOf(
+            "Kotlin",
+            "Ktor",
+            "Three.js",
+            "React",
+            "Compose Multiplatform",
+            "Python",
+            "Rust",
+            "Bevy",
+            "Dart",
+            "Flutter",
+            "Java",
+            "Spring Boot",
+            "Android",
+        )
+
+        for (item in items) {
+            div {
+                +item
+            }
         }
     }
 }

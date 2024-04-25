@@ -1,8 +1,6 @@
 package com.ichbinluka.components
 
-import com.ichbinluka.GITHUB_PROFILE_URL
-import com.ichbinluka.TANK_GAME_URL
-import com.ichbinluka.WEBSITE_SOURCE_CODE_URL
+import com.ichbinluka.*
 import emotion.react.css
 import react.FC
 import react.dom.html.ReactHTML
@@ -48,6 +46,7 @@ val WorkProjects = FC {
             In 2023, as students, we had the task of developing a software called SESAM for access 
             management in buildings as part of a cooperation between University of Bielefeld and 
             Deutsche Telekom. My team was one of the 3 winning teams. 
+            In this project we used Java with Spring Boot and TypeScript with Vue. 
         """.trimIndent()
         a {
             href = SESAM_ARTICLE_LINK
@@ -96,7 +95,7 @@ val FreeTimeProjects = FC {
         """.trimIndent()
 
         interactionItems = listOf(
-            SourceCodeInteractionItem("https://github.com/IchbinLuka/raytracer.rs")
+            SourceCodeInteractionItem(RAYTRACER_SOURCE_CODE)
         )
     }
 
@@ -106,9 +105,14 @@ val FreeTimeProjects = FC {
         +"""
             A small top down space shooter game where you need to defend space stations from enemy ships.
             I am making this game using Rust and the Bevy game engine.
-            This game is not yet in a state where I can share it, but I'm working on it.
         """.trimIndent()
+
+        interactionItems = listOf(
+            SourceCodeInteractionItem(SPACE_GAME_SOURCE_CODE),
+            PlayInteractionItem(SPACE_GAME_URL),
+        )
     }
+
     ProjectElement {
         title = "This Website"
         image = "images/website_screenshot.png"
