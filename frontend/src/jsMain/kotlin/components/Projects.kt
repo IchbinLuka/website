@@ -5,6 +5,7 @@ import emotion.react.css
 import react.FC
 import react.dom.html.ReactHTML
 import react.dom.html.ReactHTML.a
+import react.dom.html.ReactHTML.p
 import web.cssom.*
 
 val Projects = FC {
@@ -102,10 +103,31 @@ val FreeTimeProjects = FC {
     ProjectElement {
         title = "Space Game (WIP)"
         image = "images/space_game_screenshot.png"
-        +"""
+        p {
+            +"""
             A small top down space shooter game where you need to defend space stations from enemy ships.
+            The enemies can drop powerups like shields, bombs or turrets which can help you in your fight.
             I am making this game using Rust and the Bevy game engine.
-        """.trimIndent()
+            """.trimIndent()
+        }
+
+        p {
+            +"""
+            This game also features an online leaderboard, where you can compete with others for the highscore.
+            The server being used to host the leaderboard is written in Rust with 
+            """.trimIndent()
+
+            a {
+                href = "https://rocket.rs/"
+                +"Rocket"
+            }
+            +""" 
+            .
+            The source code of the leaderboard server is not available to not expose the anti-cheat mechanisms.
+            """.trimMargin()
+        }
+
+
 
         interactionItems = listOf(
             SourceCodeInteractionItem(SPACE_GAME_SOURCE_CODE),
