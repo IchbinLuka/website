@@ -31,10 +31,15 @@ external interface ProjectElementProps : PropsWithChildren {
     var interactionItems: List<InteractionItem>
 }
 
-fun SourceCodeInteractionItem(link: String) = InteractionItem(
+enum class SourceCodeHost(val icon: String) {
+    GITHUB("icons/github-mark-white.svg"),
+    GITLAB("icons/gitlab-logo.svg"),
+}
+
+fun SourceCodeInteractionItem(link: String, host: SourceCodeHost = SourceCodeHost.GITHUB) = InteractionItem(
     title = "Source Code",
     link = link,
-    icon = "icons/github-mark-white.svg",
+    icon = host.icon,
 )
 
 fun PlayInteractionItem(link: String) = InteractionItem(

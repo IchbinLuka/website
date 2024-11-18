@@ -22,8 +22,9 @@ val AboutMe = FC {
         }
         p {
             +"""
-                I am currently studying cognitive computer science at the University of Bielefeld.
-                In my free time, I like to work on various projects, such as this website, or small browser games.
+                I recently graduated with a Bachelor's degree in Cognitive Computer Science at the University of Bielefeld
+                and am now pursuing a Master's degree in Intelligent Interactive Systems.
+                In my free time, I like to work on various projects, such as this website or small browser games.
             """.trimIndent()
         }
 
