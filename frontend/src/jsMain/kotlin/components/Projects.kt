@@ -197,6 +197,7 @@ val FreeTimeProjects = FC {
 
         interactionItems = listOf(
             SourceCodeInteractionItem(SPACE_GAME_SOURCE_CODE),
+            DownloadInteractionItem(SPACE_GAME_RELEASES),
             PlayInteractionItem(SPACE_GAME_URL),
         )
     }

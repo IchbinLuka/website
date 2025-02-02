@@ -48,6 +48,12 @@ fun PlayInteractionItem(link: String) = InteractionItem(
     icon = "icons/play_arrow.svg",
 )
 
+fun DownloadInteractionItem(link: String) = InteractionItem(
+    title = "Download",
+    link = link,
+    icon = "icons/download.svg",
+)
+
 
 val ProjectElement = FC<ProjectElementProps> {
     ContentElement {
